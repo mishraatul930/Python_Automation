@@ -11,5 +11,6 @@ driver.get("https://demoqa.com/text-box")
 driver.maximize_window()
 driver.find_element(By.ID,'userName').send_keys('Atul')
 driver.find_element(By.ID,'userEmail').send_keys('mishraatul930@gmail.com')
-
-
+driver.find_element(By.ID,'currentAddress').send_keys('Q.No - 153, Rajgangpur, 24 Paragnas, Bhilai Power House')
+driver.find_element(By.ID,'permanentAddress').send_keys('Q.No - 153, Rajgangpur, 24 Paragnas, Bhilai Power House')
+driver.find_element(By.ID,'submit').click()
