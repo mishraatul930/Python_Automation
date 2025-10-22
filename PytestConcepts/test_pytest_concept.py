@@ -30,4 +30,4 @@ def test_m6():
 #how to run file specific marker - py.test directory_name/file_name -m marker_name
 #how to run tests in parallel py.test -n 5
 #how to run file specific parallel tests - py.test directory_name/file_name -n 5
-#5 in above comments is the number of workers
+#5 in above comments is the number of workers# Activate virtualenv (PowerShell)
