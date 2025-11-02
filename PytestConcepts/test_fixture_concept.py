@@ -25,7 +25,7 @@ def init_driver():
     driver.quit()
 
 def test_google_title(init_driver):
-    assert "Google1" in driver.title, "Title does not match"
+    assert "Google" in driver.title, "Title does not match"
 
 def test_google_search(init_driver):
     search_box = driver.find_element(By.NAME, "q")

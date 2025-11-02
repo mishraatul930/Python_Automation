@@ -4,7 +4,8 @@ def test_m():
     a = 3
     b = 4
     assert a+1 == 4, "Assert Failed"
-    assert a == b,"Assert false both are not equal"
+    assert a == b,("Assert false both are"
+                   " not equal")
 
 @pytest.mark.login
 def test_m2():
