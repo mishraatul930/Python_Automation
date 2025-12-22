@@ -1,4 +1,6 @@
 import re
+import time
+
 from playwright.sync_api import Page, expect
 
 def test_navigate(page: Page):
@@ -6,4 +8,9 @@ def test_navigate(page: Page):
 
 def test_to_have_title(page: Page):
     page.goto("https://demoqa.com/")
-    expect(page.title).to_have_title(re.compile("DEMOQA"))
+    expect(page).to_have_title(re.compile("DEMOQA"))
+
+def test_to_click_on_element(page: Page):
+    page.goto("https://demoqa.com/")
+    page.get_by_role("heading", name="Elements").click()
+    time.sleep(5)
