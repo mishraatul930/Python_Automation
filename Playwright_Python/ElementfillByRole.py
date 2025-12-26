@@ -46,13 +46,3 @@ def test_to_fill_elements(page: Page):
     page.locator("//textarea[@id='permanentAddress']").fill("ABCD Lane No - 40, GHJK Town, Pincode-831001")
     page.wait_for_timeout(5000)
     page.locator("//button[@id='submit']").click()
-
-def test_to_click_checkbox(page: Page):
-    page.get_by_role("heading", name="Elements").click()
-    time.sleep(5)
-    # page.get_by_text("Text Box", exact=True).click()
-    page.locator("//span[@class='text' and normalize-space() = 'Text Box']").click()
-    page.wait_for_timeout(5000)
-    page.locator("//span[@class='text' and normalize-space() = 'Check Box']").click()
-    page.wait_for_timeout(5000)
-    page.locator("//span[@class='rct-title' and text() = 'Home']").click()
