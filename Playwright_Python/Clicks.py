@@ -35,3 +35,7 @@ def test_to_click(page: Page):
     page.wait_for_timeout(5000)
     page.get_by_text("Word File.doc").click(button="right")
     page.wait_for_timeout(5000)
+    page.locator("//button[@title='Expand all']").click()
+    page.wait_for_timeout(5000)
+    page.locator("//span[@class='rct-title' and text() = 'Downloads']").click()
+    page.wait_for_timeout(5000)
